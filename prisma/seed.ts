@@ -23,7 +23,7 @@ const generateUsers = (count) => {
 
 const seed = async () => {
 //   console.log(`seeding `);
-  const users = generateUsers(20);
+  const users = generateUsers(10);
   for (let user of users) {
     await prisma.user.create({ data: user });
   }
